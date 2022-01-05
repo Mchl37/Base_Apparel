@@ -9,21 +9,23 @@
 
 body {
     height: 100vh;
-    position: relative;
+    width: 100vw;
     background-image: url("../images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-y: hidden
 }
 
 .container {
-    max-height: 100vh;
+    min-height: 100vh;
+    position: relative;
     display: flex;
-    align-items: center;
     float: left;
 }
 
 .container .content {
-    margin-top: 70px; /* ou 5em */
-    margin-left: 150px; /* ou 10em */
+    margin-top: 70px;
+    margin-left: 150px;
 }
 
 .container .content .title h1 {
@@ -110,14 +112,18 @@ body {
 }
 
 .illustration {
-    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     float: right;
 }
 
 .illustration img {
+    display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .illustration_mobile {
