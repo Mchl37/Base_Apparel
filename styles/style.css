@@ -116,6 +116,10 @@ body {
     float: right;
 }
 
+.illustration img {
+    max-width: 100%;
+}
+
 .illustration_mobile {
     display: none;
 }
@@ -135,7 +139,9 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+/* Media Queries */
+
+@media (max-width: 576px) {
     .illustration {
         display: none;
     }
@@ -150,15 +156,23 @@ body {
 
     body {
         background: none;
+        overflow-y: auto;
+    }
+
+    .container {
+        display: block;
     }
 
     .container .content {
         margin: 0;
     }
 
-    .container .content #logo {
-        width: 30%;
+    .container .content .logo {
         margin: 40px auto 30px 30px;
+    }
+
+    .container .content .logo img {
+        width: 30%;
     }
 
     .container .content .title h1 {
@@ -185,7 +199,7 @@ body {
     }
 
     .container .content .form {
-        margin: 35px 30px auto 30px;
+        margin: 35px 30px 100px;
     }
 
     .container .content .form input {
