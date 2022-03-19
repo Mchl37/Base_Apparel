@@ -131,18 +131,20 @@ body {
 }
 
 .attribution {
-    color: black;
-    text-align: center;
+    font-size: 11px;
+    color: hsl(0, 6%, 24%);
     position: fixed;
     bottom: 15px;
+    margin-left: 150px;
 }
 
 .attribution a {
-    color: black;
+    color: hsl(0, 6%, 24%);
+    font-size: inherit;
 }
 
 .attribution a:hover {
-    color: hsl(228, 45%, 44%);
+    color: hsl(0, 36%, 70%);
 }
 
 /* Media Queries */
@@ -214,5 +216,11 @@ body {
 
     .container .content .alert p {
         margin-left: 30px;
+    }
+
+    .container .attribution {
+        margin: 0 30px;
+        position: relative;
+        text-align: center;
     }
 }
